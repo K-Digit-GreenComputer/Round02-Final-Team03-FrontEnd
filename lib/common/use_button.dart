@@ -1,33 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:readme_app/style/colours.dart';
-import 'package:readme_app/style/dimens.dart';
 
 class UseButton extends StatefulWidget {
   final String title;
-  final VoidCallback buttonPressed;
 
-  UseButton({required this.title, required this.buttonPressed, Key? key})
-      : super(key: key);
+  UseButton({required this.title, Key? key}) : super(key: key);
 
   @override
   State<UseButton> createState() => _useButtonState();
 }
 
 class _useButtonState extends State<UseButton> {
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.sizeOf(context).width,
-      child: ElevatedButton(
-        onPressed: widget.buttonPressed,
-        child: Text(widget.title),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colours.app_main,
-          foregroundColor: Colours.app_sub_white,
-          padding: EdgeInsets.symmetric(vertical: 20),
-            textStyle: TextStyle(fontWeight: FontWeight.w700, fontSize: Dimens.font_sp30),
-        ),
-      ),
+    return TextButton(
+      onPressed: () {},
+      style: TextButton.styleFrom(
+          backgroundColor: Colours.app_sub_black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),),
+      child: Text("${widget.title}", style: TextStyle(color: Colours.app_sub_white),)
+
     );
   }
 }
+

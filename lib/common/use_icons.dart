@@ -11,7 +11,6 @@ class UseIcons {
   //스크랩, 장바구니
   static const Icon cart = Icon(CupertinoIcons.cart);
   static const Icon heart = Icon(CupertinoIcons.heart);
-  static const Icon heartFill = Icon(CupertinoIcons.heart_fill);
 
   //알람
   static const Icon alarm = Icon(CupertinoIcons.bell_fill);
@@ -36,7 +35,7 @@ class UseIcons {
   static const Icon paymentList = Icon(CupertinoIcons.money_dollar);
   static const Icon bookPayment = Icon(CupertinoIcons.book_fill);
   static const Icon review = Icon(CupertinoIcons.ellipses_bubble_fill);
-  static const Icon infoMark = Icon(CupertinoIcons.info_circle);
+  static const Icon infoMark = Icon(CupertinoIcons.bookmark);
   
   // 도서 뷰어
   static const Icon bookmark = Icon(CupertinoIcons.bookmark_fill);
